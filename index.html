@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>call back function</title>
+    </head>
+    <body>
+        <h2>ARROW FUNCTIO </h2>
+    </body>
+    <script>
+const multiply = (a, b) => {
+    return a * b;
+};
+function calculate(callback) {
+    let result = callback(10, 70);
+
+    console.log("Multiplication Result: " + result);
+}
+calculate(multiply);
+    </script>
+
+</html>
